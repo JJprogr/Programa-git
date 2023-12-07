@@ -1,0 +1,342 @@
+/*
+Ancho del sitio 1000px
+mínimo ancho adaptable 600px
+*/
+body {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-image: url("../img/PatronFondo.png");
+}
+HR {
+	margin:  20px 0;
+	border:  1px groove #2EBF91;
+}
+
+/*
+-----------------------------------
+------------- TABLAS --------------
+-----------------------------------
+*/
+TABLE {
+
+}
+
+ARTICLE SECTION TABLE {
+	margin: 10px auto;
+	padding: 0;
+	width: 100%;
+	text-align: center;
+	border: 3px solid #3498db;
+	border-spacing: 0;
+}
+ARTICLE SECTION TABLE TH {
+	text-align: center;
+	padding: 5px 1px;
+	font-size: 1.2em;
+	font-weight: bolder;
+	color: orange;
+	background-color: #d4e6f1;
+}
+ARTICLE SECTION TABLE TR:nth-of-type(odd) {
+	background-color: #a9cce3;
+}
+ARTICLE SECTION TABLE TR:nth-of-type(even) {
+	background-color: #2ecc71;
+}
+ARTICLE SECTION TABLE TR TD {
+	padding: 5px 1px;
+	text-align: center;
+	color: #c8e6c9;
+	font-size: 1.1em;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+
+/*
+-----------------------------------
+------------- Título --------------
+-----------------------------------
+*/
+#cajaTitulo {
+	margin: auto;
+	min-width: 600px;
+	max-width: 1000px;
+	height: 140px;
+	text-align: center;
+	background-color: cornsilk;
+}
+#cajaTitulo IMG {
+	position: absolute;
+	top: 2px;
+	left: 40%;
+	margin-left: -300px;
+	width: 300px;
+	height: 135px;
+	z-index: 1;
+}
+#cajaTitulo FIGCAPTION {
+	opacity: 0.8;
+	position: absolute;
+	width: 900px;
+	top: 10px;
+	left:50%;
+	margin-left:-300px;
+	z-index: 2;
+}
+#cajaTitulo FIGCAPTION:hover {
+	color: #081d38;
+	cursor: pointer;
+}
+#cajaTitulo FIGCAPTION H1 {
+	color: dodgerblue;
+	text-shadow: 1px 1px 1px black;
+}
+#cajaTitulo FIGCAPTION P {
+	font-size: 1.2em;
+	font-weight: bolder;
+	color: orange;
+	text-shadow: 1px 1px 1px black;
+}
+/*
+-----------------------------------
+---------- Menú Principal ---------
+-----------------------------------
+*/
+#cajaMenuPrincipal {
+	margin: auto;
+	padding: 4px 0;
+	min-width: 600px;
+	max-width: 1000px;
+	text-align: center;
+	background-color:#fc4a1a;
+	border-top:3px groove black;
+	border-bottom:3px groove black;
+}
+#cajaMenuPrincipal A,
+#cajaMenuPrincipal UL LI {
+	display: inline-block;
+	padding: 2px 3px;
+	text-decoration: none;
+	list-style: none;
+	background-color: darkcyan;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+#cajaMenuPrincipal A {
+	color: black;
+	font-size: 1.1em;
+	background-color: #D7DDE8;
+	text-shadow:  1px 1px 1px black;
+}
+#cajaMenuPrincipal A:hover {
+	background-color: black;
+}
+#cajaMenuPrincipal UL LI {
+	margin: 3px;
+	box-shadow:  3px 3px 3px black;
+}
+
+/*
+-----------------------------------
+------------ Contenido ------------
+-----------------------------------
+*/
+#cajaContenido {
+	display: flex;
+	margin: auto;
+	min-width: 600px;
+	max-width: 1000px;
+	background-color: #34e89e;
+}
+#cajaContenido #cajaEntradas {
+	padding: 10px 5px;
+	margin: 5px 20px 10px 3px;
+	flex: 3;
+	border-right: 3px groove #0f9b0f;
+}
+#cajaContenido #cajaEntradas ARTICLE HEADER {
+	margin: 5px 0;
+	color: white;
+	text-align: center;
+	border:  2px groove black;
+	background-color: #0f9b0f;
+	border-radius:  5px;
+	box-shadow: 2px 2px 2px black;
+}
+#cajaContenido #cajaEntradas ARTICLE HEADER H2 {
+	color: black;
+	background-color: darkkhaki;
+	text-shadow: 1px 1px 1px black;
+}
+#cajaContenido #cajaEntradas ARTICLE SECTION {
+	margin: 14px 0;
+}
+#cajaContenido #cajaEntradas ARTICLE SECTION H3 {
+	color: darkblue;
+	font-size: 1.3em;
+	text-shadow: 1px 1px 1px black;
+	border-bottom: 3px groove black;
+}
+/*
+-----------------------------------
+-------------- Aside --------------
+-----------------------------------
+*/
+ASIDE {
+	margin: 5px 3px 5px 0;
+	padding: 3px 4px 3px 2px;
+	flex:  1;
+}
+ASIDE H4 {
+	margin: 3px 0;
+	padding: 3px 0;
+	color: darkblue;
+	text-align: center;
+	background-color:darkkhaki;
+	border: 2px groove black;
+	border-radius: 3px;
+	text-shadow:  1px 1px 1px black;
+}
+ASIDE UL {
+	width: 80%;
+	margin: 5px 0;
+}
+ASIDE UL LI {
+	margin: 5px 0;
+	padding: 6px 0;
+	width: 100%;
+	list-style: none;
+	border-radius: 5px;
+}
+ASIDE UL LI:nth-of-type(odd) {
+	background-color:#FFD200;
+}
+ASIDE UL LI:nth-of-type(even) {
+	background-color: #FFD200;
+}
+ASIDE UL LI A {
+	padding: 5px;
+	width: 100%;
+	font-size: 1.2em;
+	text-decoration:  none;
+	text-shadow:  1px 1px 1px black;
+}
+ASIDE UL LI A:hover {
+	color: black;
+	text-decoration: underline;
+}
+ASIDE UL LI:nth-of-type(odd) A {
+	color: darkgray;
+}
+ASIDE UL LI:nth-of-type(even) A {
+	color: white;
+}
+
+/*
+-----------------------------------
+-------------- Footer -------------
+-----------------------------------
+*/
+
+FOOTER {
+	margin: 0 auto 10px auto;
+	min-width: 600px;
+	max-width: 1000px;
+	border-top:3px groove black;
+	background-color:#44A08D;
+}
+FOOTER P {
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+FOOTER P A {
+	color: yellow;
+}
+FOOTER #cajaEnlacesFooter {
+	margin: auto;
+	width: 100%;
+	display: flex;
+}
+FOOTER #cajaEnlacesFooter NAV {
+	flex: 1;
+}
+FOOTER #cajaEnlacesFooter NAV UL {
+	margin: 5px 0;
+	padding: 8px 0;
+	border-top:  3px groove skyblue;
+	border-bottom:  3px groove skyblue;
+}
+FOOTER #cajaEnlacesFooter NAV UL LI {
+	padding: 5px;
+	list-style: none;
+	text-align: center;
+}
+FOOTER #cajaEnlacesFooter NAV UL LI A {
+	margin: auto;
+	padding:  5px ;
+	color:  green;
+}
+FOOTER #cajaEnlacesFooter NAV UL LI A:hover {
+	color: white;
+}
+FOOTER #cajaEnlacesFooter NAV UL LI A:visited {
+	color: red;
+}
+
+/*
+-----------------------------------
+------------- Agregar -------------
+-----------------------------------
+*/
+.agregar {
+	padding: 10px 8px;
+	cursor: pointer;
+	font-size: 1.4em;
+	text-align: right;
+	color: darkcyan;
+	font-weight: bolder;
+}
+.agregar:hover {
+	text-decoration: underline;
+}
+
+/*
+-----------------------------------
+------------- Buscar --------------
+-----------------------------------
+*/
+#buscar {
+	display: none;
+}
+#buscar FORM {
+	margin: auto;
+	text-align: center;
+}
+#busqueda {
+	display: none;
+}
+
+/*
+-----------------------------------
+--------------- Subir -------------
+-----------------------------------
+*/
+#subir {
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+#subir:visited {
+	color: white;
+}
+#subir DIV {
+	font-size: 1.2em;
+	background-color: #536976;
+}
+#subir DIV:hover {
+	background-color:#536976 ;
+}
